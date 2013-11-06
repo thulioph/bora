@@ -1,0 +1,4 @@
+/*difinição de interações para tela de login*/
+#app_login.active_display{
+	-webkit-transform: translate(0, 0);
+}

@@ -1,0 +1,228 @@
+/*definições da página de interesses*/
+#event_detail{
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 0.2s linear;
+	-webkit-transform: translate(100%, 0);
+	display: none;
+}
+
+/*título das páginas*/
+#event_detail .title_page{
+	width: 100%;
+	height: 43px;
+	padding-top: 25px;
+	background-color: #2b2e35;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'quicksandbold';
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #000;
+	filter: dropshadow(color=#000, offx=1, offy=1);
+	position: relative;
+}
+#event_detail .title_page span{
+	vertical-align: top;
+}
+.type_from_event{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3px;
+}
+/*definições para o botão de menu*/
+#back_to_showcase_events {
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	left: 0;
+	top: 7px;
+}
+#back_to_showcase_events img{
+	width: 60px!important;
+}
+
+#more_informations_event{
+	position: absolute;
+	right: 13px;
+	top: 18px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 2em;
+	width: 35px;
+	height: 33px;
+	font-size: 1.5em;
+	padding-top: 2px;
+	text-align: center;
+	-webkit-transition: all 0.3s linear;
+}
+.event_nav_view_show #more_informations_event{
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*definições para parte central da página*/
+#event_detail .content{
+	background-color: #25282f;
+	border:1px solid #1f2127;
+	padding: 15px 0;
+	box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+#event_detail .content article{
+	display: inline-block;
+	position: relative;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	background-color: #2b2e35;
+}
+
+/*definições padrão de eventos*/
+#event_detail img{
+	width: 100%;
+	max-width: 100%;
+}
+#event_detail h3,
+#event_detail h4,
+#event_detail .i_go,
+.i_go_target{
+	position: absolute;
+	z-index: 2;
+	font-family: 'quicksandbold';
+}
+#event_detail h3,
+#event_detail h4{
+	text-align: left;
+	text-transform: uppercase;
+}
+#event_detail h4{
+	font-family: 'quicksandbook';
+}
+
+/*definições para o tipo de evento principal*/
+#event_detail .event_type_showcase{
+	overflow: visible;
+}
+#event_detail .event_type_showcase h3{
+	font-size: 1.099em;
+	bottom: 42%;
+}
+#event_detail .event_type_showcase h4{
+	font-size: 0.7em;
+	bottom: 32%;
+}
+#event_detail .event_type_showcase .i_go{
+	bottom: 31%;
+}
+
+/*definições para o botão de todos os eventos*/
+.i_go_target{
+	background-color: #F42C2C;
+	border-radius: 2em;
+	text-align: center;
+	width: 32%;
+	height: 28px;
+	padding-top: 13px;
+	font-size: 0.99em;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	margin: 10px 0 10px 7px;
+	text-transform: uppercase;
+}
+
+#share_button{
+	background-color: #f2f2f2;
+	border-radius: 2em;
+	text-align: center;
+	width: 56%;
+	height: 34px;
+	padding-top: 2%;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	margin: 10px 0 10px 42%;
+	text-transform: uppercase;
+	position: relative;
+}
+
+#share_button > .ico{
+	width: 27px;
+	display: inline-block;
+	vertical-align: top;
+	margin: -2px 0 0 8px;
+}
+
+#share_button h5{
+	display: inline-block;
+	color: #2B2E35;
+	vertical-align: top;
+	margin: 8px 5px 0 0;
+	font-family: 'quicksandbold';
+	font-size: 0.8em;
+}
+
+.nav_share{
+	position: absolute;
+	background-color: #f2f2f2;
+	border-radius: 0.3em;
+	width: 70%;
+	height: 140%;
+	bottom: -160%;
+	left: 17%;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.1s linear;
+	-webkit-transform: translate(0, -65%);
+	opacity: 0;
+}
+
+.nav_share.activeMenu{
+	-webkit-transform: translate(0, 0);
+	opacity: 1;
+}
+.nav_share li{
+	display: inline-block;
+}
+
+.nav_share .ico{
+	width: 50px!important;
+	margin: 3px;
+}
+
+
+#event_detail .event_desc{
+    font-family: 'quicksandlight';
+    display: inline-block;
+    text-align: left;
+    width: 90%;
+    padding-bottom: 20px;
+	font-size: 1.2em;
+}
+
+#event_detail .event_desc.first{
+	padding-top: 1em;
+}
+
+#event_detail .event_desc strong{
+	font-family: 'quicksandbold';
+	display: block;
+	padding-bottom: 10px;	
+}
+
+
+.tiket_shop{
+	background-color: #2c2f36;
+	border: 1px solid #fff;
+	font-size: 1.2em;
+	border-radius: 2em;
+	width: 90%;
+	margin-bottom: 30px;
+	font-family: 'quicksandbold';
+	text-transform: uppercase;
+	padding-top: 10px;
+	height: 50px;
+}
+
+.tiket_shop img{
+	width: 30px!important;
+	margin-top: 7px;
+}
+
+.tiket_shop span{
+	vertical-align: top;
+	margin: 10px 0 0 10px;
+}

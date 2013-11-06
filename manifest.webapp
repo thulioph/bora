@@ -1,0 +1,30 @@
+{
+    "version": "0.1",
+    "name": "Bora!",
+    "launch_path": "/visao/default/index.html",
+    "description": "Agenda Cultural Digital",
+    "icons": {
+        "16": "/visao/default/img/icones/logo16.png",
+        "32": "/visao/default/img/icones/logo32.png",
+        "48": "/visao/default/img/icones/logo48.png",
+        "64": "/visao/default/img/icones/logo64.png",
+        "128": "/visao/default/img/icones/logo128.png"
+    },
+    "developer": {
+        "name": ["Rodolfo Dias", "Thulio Philipe"],
+        "url": ["http://rmdias.com", "http://thulioph.com"]
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "br",
+    "permissions": {
+        "desktop-notification": {
+            "description" : "To show notifications"
+        },
+        "geolocation": {
+            "description" : "Marking out user location"
+        },
+        "systemXHR" : {
+            "description" : "To do request"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+# Ignorar todos os diretórios e arquivos em um diretório #
+arquivos/**/* 
+arquivos/**/ 
+arquivos/
+
+visao/default/img/**/*
+visao/default/img/**
+visao/default/img/
+
+visao/default/fonts/**/*
+visao/default/fonts/**
+visao/default/fonts/
+
+
+# Gerais #
+######################
+*.PSD
+*.psd
+*.png
+*.ico
+
+# Compilados #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Pacotes #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Registro e banco de dados #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Gerados pelo Sistema Operacional #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

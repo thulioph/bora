@@ -1,0 +1,601 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Bora - Agenda Cultural Digital</title>
+
+    <!-- google -->
+    <meta name="description" content="Bora é um aplicativo para a agenda cultural da sua cidade.">
+   <!--  <meta name="keywords" content="front end recife, designer recife, construção de sites recife, recife, brazil, brasil, tecnologia, i2 mobile soluitons, cartello, cartello tecnologia, mobic, porto digital, pocketstore, publiq, publiq app, i2 tecnologia"> -->
+    <link rel="canonical" href="http://bora.rmdias.com">
+
+    <!-- favico -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-startup-image" href="img/icons/startup-tablet.png">
+    
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="css/style.final.combo.css"> -->
+    <link rel="stylesheet" href="css/style.firefox-os.css">
+
+
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="true">
+   <!--  <meta name="format-detection" content="telephone=yes"> -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="cleartype" content="on">
+
+
+
+    <!--[if gte IE 9]> <style type="text/css"> .gradient {filter: none; } </style> <![endif]-->
+
+</head>
+<body>
+    <div id="all_aplication">
+        <aside id="left_bar">
+            <h1><a href="javascript:;">Bora!</a></h1>
+            <nav id="app_navigation" class="disable">
+                <ul>
+                    <li>
+                        <a href="javascript:;" id="go_event_list">
+                            Eventos em destaque
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="go_events_on_map">
+                            Eventos no mapa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Todos os eventos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Notificações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Configurações
+                        </a>
+                    </li>
+                    <li class="search_input">
+                        <input type="search" name="search_in_app" id="search_in_app" placeholder="Buscar evento"> 
+                    </li>
+                </ul>
+            </nav><!-- app_navigation -->
+        </aside><!-- left_bar -->
+        <section id="app_canvas">
+            <div class="progressBar">
+                <div class="progress progress_red"></div>
+                <div class="progress progress_orange"></div>
+                <div class="progress progress_yellow"></div>
+                <div class="progress progress_light_green"></div>
+                <div class="progress progress_medium_green"></div>
+                <div class="progress progress_strong_green"></div>
+                <div class="progress progress_light_blue"></div>
+                <div class="progress progress_medium_blue"></div>
+                <div class="progress progress_strong_blue"></div>
+            </div><!-- progressBar -->
+            <section id="app_login" class="active_display">
+                <figure id="random_images">
+                    <span class="mask"></span>
+                    <!-- <img src="img/slide_login/show_recife_antigo.png" alt="">
+                    <img src="img/slide_login/imagem_de_show.png" alt=""> -->
+                    <img src="img/slide_login/imagem_paixao_de_cristo.png" alt="">
+                    <h1 id="logo"><img src="img/logo_bora_home.png" alt="Bora - Agenda Cultural Digital"></h1>
+                </figure><!-- random_images -->
+                <h2>
+                    <strong>Conecte-se </strong> para aproveitar todas as facilidades da <strong> Bora! </strong> e fique por dentro de todos os eventos da sua cidade.
+                </h2>
+                <div class="separator">
+                    <div class="line"></div>
+                    <div class="cicle"></div>
+                    <div class="line"></div>
+                </div><!-- separator -->
+                <nav id="login_options">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="facebook_login buttons_login">
+                                <img src="img/icones/facebook.svg" class="ico">  
+                                <span class="text">
+                                   Conectar com o <strong>Facebook</strong>
+                                </span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="twitter_login buttons_login">
+                                <img src="img/icones/twitter.svg" class="ico">  
+                               <span class="text">
+                                   Conectar com o <strong>Twitter</strong>
+                               </span> 
+                            </a>
+                        </li>
+                        <li id="step_pass-li">
+                            <a href="javascript:;" id="step_pass">
+                               <span class="text">
+                                    <strong>Pular esta estapa</strong>
+                               </span> 
+                                <img src="img/icones/seta.svg" class="ico">  
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- login_options -->
+            </section><!-- app_login -->
+            <section id="app_interests">
+                <h2 class="title_page">
+                    Interesses
+                </h2>
+                <div class="content">
+                    <h3>
+                        Selecione abaixo os eventos que você tem mais interesse,
+                        para receber um conteúdo personalizado.
+                    </h3>
+                    <div class="separator">
+                        <div class="line"></div>
+                        <div class="cicle"></div>
+                        <div class="line"></div>
+                    </div><!-- separator -->
+                    <nav id="app_interests_options">
+                        <ul>
+                            <li>
+                                <div href="javascript:;" class="circular_buttons_nav" id="music_button">
+                                    <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/musica.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/musica.svg" class="ico">
+                                                <img src="img/icones/check.svg" class="check_ico">
+
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Música</span>
+                                </div>
+                            </li>
+                            <li class="margin">
+                                <div href="javascript:;" class="circular_buttons_nav" id="theater_button">
+                                    <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/teatro.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/teatro.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Teatro</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="javascript:;" class="circular_buttons_nav" id="dance_button">
+                                    <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/bailarina.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/bailarina.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Dança</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="javascript:;" class="circular_buttons_nav" id="cine_button">
+                                   <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/cine.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/cine.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Cine e Vídeo</span>
+                                </div>
+                            </li>
+                            <li class="margin">
+                                <div href="javascript:;" class="circular_buttons_nav" id="visual_arts_button">
+                                    <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/artes_visuais.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/artes_visuais.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Artes visuais</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="javascript:;" class="circular_buttons_nav" id="literature_button">
+                                    <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/literatura.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/literatura.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Literatura</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="javascript:;" class="circular_buttons_nav" id="fashion_button">
+                                   <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/cabide.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/cabide.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Moda</span>
+                                </div>
+                            </li>
+                            <li class="margin">
+                                <div href="javascript:;" class="circular_buttons_nav" id="kids_button">
+                                   <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/infantil.png" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/infantil.png" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Infantil</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="javascript:;" class="circular_buttons_nav" id="workshop_button">
+                                    <figure class="card">
+                                        <figcaption class="front">
+                                            <span class="cicle">
+                                                <img src="img/icones/workshop.svg" class="ico">
+                                            </span>
+                                        </figcaption>
+                                        <figcaption class="back">
+                                            <span class="cicle">
+                                                <img src="img/icones/workshop.svg" class="ico">  
+                                                <img src="img/icones/check.svg" class="check_ico">
+                                            </span>
+                                        </figcaption>
+                                    </figure>
+                                    <span class="text">Workshop</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav><!-- app_interests_options -->
+                </div><!-- content -->
+                <a href="javascript:;" class="continue_button" id="go_to_app">Continuar</a>
+            </section><!-- app_interests -->
+            <section id="showcase_events">
+                <h2 class="title_page">
+                    <div class="prime_nav_view">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Eventos em destaque</span>
+                </h2>
+                <div class="content">
+                    <article class="event_type_showcase music_event">
+                        <img src="img/eventos/Caetano_veloso_abraco.png" alt="">
+                        <h3>Caetano Veloso ‘Abraçaço’</h3>
+                        <h4>Sábado 18/05 - 22h <br> Baile Perfumado</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_double music_event">
+                        <img src="img/eventos/cat_power.png" alt="">
+                        <h3>cat power</h3>
+                        <h4>Domingo 19/05 - 23h <br> Catamarã</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_double cine_event">
+                        <img src="img/eventos/amor.png" alt="">
+                        <h3>Amor</h3>
+                        <h4>Ter à  Dom - 09h as 22h <br> Fundaj</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_single_line cine_event">
+                        <img src="img/eventos/metamorfo_cavani_rosas.png" alt="">
+                        <h3>metamorfo - cavani rosas</h3>
+                        <h4>Terça 13/05 - 16h <br> A Casa do Cachorro Preto</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_double moda_event">
+                        <img src="img/eventos/abril_pra_moda.png" alt="">
+                        <h3>abril pra moda</h3>
+                        <h4>Domingo 19/ e 20/04 - 21h <br> Chevrolet Hall</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_double theater_event">
+                        <img src="img/eventos/la_carta.png" alt="">
+                        <h3>la carta</h3>
+                        <h4>Sábado 17/05 - 19h <br> Teatro Santa Isabel</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_single_line music_event">
+                        <img src="img/eventos/abril_pro_rock.png" alt="">
+                        <h3>festival abril pro rock</h3>
+                        <h4>Sábado 17/05 - 19h <br> Teatro Santa Isabel</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_double cine_event">
+                        <img src="img/eventos/cine_direto_07.png" alt="">
+                        <h3>cine direto #07</h3>
+                        <h4>Sábado 05/05 - 17h <br>Casa do Cachorro Preto</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+                    <article class="event_type_double moda_event">
+                        <img src="img/eventos/melk_z.png" alt="">
+                        <h3>melk-z</h3>
+                        <h4>Sábado 07/05 - 13h <br> Atelie Melk Zda</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                    </article>
+
+                </div><!-- content -->
+                <a href="javascript:;" class="continue_button">ver todos os eventos</a>
+            </section><!-- showcase_events -->
+            <section id="event_detail">
+                <div class="title_page">
+                    <div id="back_to_showcase_events">
+                        <img src="img/icones/seta_eventos.svg">
+                    </div>
+                    <h2 class="type_from_event music_type_event">Música</h2>
+                    <div id="more_informations_event">
+                        +
+                    </div>
+                </div>
+                <div class="content">
+                    <article class="event_type_showcase music_event">
+                        <img src="img/eventos/Caetano_veloso_abraco.png" alt="">
+                        <h3>Caetano Veloso ‘Abraçaço’</h3>
+                        <h4>Sábado 18/05 - 22h <br> Baile Perfumado</h4>
+                        <strong class="i_go">
+                            <p>Eu vou!</p>
+                            <span>
+                                1000
+                            </span>
+                        </strong>
+                        <div class="i_go_target"><h5>Eu Vou!</h5></div>
+                        <div id="share_button">
+                            <img src="img/icones/compartilhar.svg" class="ico">
+                            <h5>Compartilhar</h5>
+                            <ul class="nav_share">
+                                <li class="facebook_share">
+                                    <img src="img/icones/facebook.svg" class="ico" alt="compartilhe esse show pelo facebook">  
+                                </li>    
+                                <li class="twitter_share">
+                                    <img src="img/icones/twitter.svg" class="ico" alt="compartilhe esse show pelo twitter">  
+                                </li>    
+                            </ul><!-- nav_share -->
+                        </div><!-- share_button -->
+                    </article>
+                   <p class="event_desc first">
+                       Modernizar a tradição e tradicionalizar o moderno. Foi o que se viu com a chegada de "Abraçaço" a São Paulo, em espetáculo que serviu para atestar mais uma vez o poder de renovação criativa de Caetano Veloso. Aos 70 anos, ele segue --como poucos de seus pares-- como símbolo de inquietude e inventividade.
+                   </p>
+                   <p class="event_desc">
+                        Comemorando 1 ano de Baile Perfumado com o show "ABRAÇAÇO", Caetano Veloso.
+                   </p>
+                   <p class="event_desc">
+                        <strong>Ingressos:</strong>
+                        A venda nas lojas PASSADISCO E VAGAMUNDO.
+                        R$ 140,00 / R$ 70,00
+                        Mesa para 4 pessoas R$ 800,00 a partir do dia 05 de abril na loja Passadisco.
+                   </p>
+                    <a href="javascript:;" class="tiket_shop">
+                      <img src="img/icones/ingressos.svg" class="ico">
+                      <span>comprar ingresso</span>  
+                    </a>
+                </div><!-- content -->
+            </section><!-- event_detail -->
+
+
+
+
+
+
+
+
+
+             <section id="events_on_map">
+                <div class="title_page">
+                    <div class="prime_nav_view">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>eventos no mapa</span>
+                    <div id="more_informations_map">
+                        <img src="img/icones/map_nav_ico.svg" alt="">
+                    </div>
+                </div>
+                <div class="content" id="map">
+                  
+
+                 <!--    <div class="event_pin pin_1 pin_music"></div>
+                    <div class="event_pin pin_2 pin_music"></div>
+                    <div class="event_pin pin_3 pin_cine"></div>
+                    <div class="event_pin pin_4 pin_cine"></div>
+                    <div class="event_pin pin_5 pin_theater"></div>
+                    <div class="event_pin pin_6 pin_theater"></div> -->
+                </div><!-- content -->
+            </section><!-- events_on_map -->
+
+
+
+
+
+
+
+        </section><!-- app_canvas -->
+        <aside id="right_bar_event">
+            <nav id="event_navigation" class="disable">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="active">
+                            Informações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            comentários (225)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            convidar amigos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Amigos que irão (5)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            local do evento
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            Adicionar ao calendário
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- event_navigation -->
+        </aside><!-- right_bar_event -->
+        <aside id="right_bar">
+            <h3>filtros do mapa</h3>
+            <nav id="app_geolocation_options">
+                <ul>
+                    <li>
+                        <label for="">raio de distância para os eventos:</label>
+                        <span class="result_distance">5 km</span>
+                        <input id="distance_change" type="range" min="5" max="10" value="5">
+                    </li>
+                    <li>
+                        <label for="">filtrar por bairro e cidade:</label>
+                        <select name="city" id="city">
+                            <option value="recife">Recife</option>
+                        </select>
+                         <select name="province" id="province">
+                            <option value="Boa Viagem">Boa Viagem</option>
+                            <option value="Casa Forte">Casa Forte</option>
+                            <option value="Casa Amarela">Casa Amarela</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav><!-- app_navigation -->
+        </aside><!-- right_bar -->
+    </div><!-- all_aplication -->
+   
+   <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/script.firefox-os.js"></script>
+    <script src="js/map.js"></script>
+    <!-- end scripts -->
+    <script>
+        APP.iniciar()
+    </script>
+</body>
+</html>

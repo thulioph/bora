@@ -1,0 +1,86 @@
+/*definições da página de interesses*/
+#events_on_map{
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 0.2s linear;
+	-webkit-transform: translate(100%, 0);
+	display: none;
+}
+
+/*título das páginas*/
+#events_on_map .title_page{
+	width: 100%;
+	height: 43px;
+	padding-top: 25px;
+	background-color: #2b2e35;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'quicksandbold';
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #000;
+	filter: dropshadow(color=#000, offx=1, offy=1);
+	position: relative;
+}
+#events_on_map .title_page span{
+	vertical-align: top;
+}
+
+/*definições para o botão de menu*/
+#more_informations_map img{
+width: 100%!important;
+}
+
+#more_informations_map{
+	position: absolute;
+right: 13px;
+top: 14px;
+width: 40px;
+height: 33px;
+font-size: 1.5em;
+padding-top: 0px;
+text-align: center;
+-webkit-transition: all 0.3s linear;
+}
+
+/*definições para parte central da página*/
+#events_on_map .content{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}
+
+.content .event_pin{
+	position: absolute;
+	width: 50px;
+	height: 70px;
+	background: transparent url(../img/sprite_map.png) no-repeat;
+}
+
+.pin_cine{background-position: 0 -69px!important;}
+.pin_theater{background-position:0 -139px!important;}
+
+.pin_1{
+	top: 10px;
+	left: 20px;
+}
+.pin_2{
+	top: 60px;
+	left: 60px;
+}
+.pin_3{
+	bottom: 200px;
+	left: 20px;
+}
+.pin_4{
+	top: 50px;
+	right: 20px;
+}
+.pin_5{
+	bottom: 130px;
+	right: 20px;
+}
+.pin_6{
+	bottom: 50px;
+	right: 20px;
+}

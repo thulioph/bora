@@ -1,0 +1,15 @@
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	
+	#logo{left: 20%;}
+	#left_bar h1{background-size: 30%}
+
+	#app_interests_options li{margin: 0 53px 25px 53px!important;}
+	#showcase_events{font-size: 1.8em;}
+	#showcase_events .continue_button{font-size: 0.8em;}
+	.i_go span{height: 26px;}
+	#left_bar{font-size: 1.2em;}
+	#right_bar_event{font-size: 1.2em;}
+}

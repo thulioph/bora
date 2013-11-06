@@ -1,0 +1,142 @@
+/*definições da página de interesses*/
+#app_interests{
+	width: 100%;
+	display: none;
+	text-align: center;
+	-webkit-transition: all 0.1s linear;
+	-webkit-transform: translate(100%, 0);
+}
+/*título das páginas*/
+#app_interests .title_page{
+	width: 100%;
+	height: 43px;
+	padding-top: 25px;
+	background-color: #2b2e35;
+	font-size: 1.4em;
+	text-align: center;
+	font-family: 'quicksandbold';
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #000;
+	filter: dropshadow(color=#000, offx=1, offy=1);
+}
+
+/*definições para parte central da página*/
+#app_interests .content{
+	background-color: #25282f;
+	border:1px solid #1f2127;
+	padding: 30px 0;
+	box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+#app_interests h3{
+	font-size: 0.8em;
+	font-family: 'quicksandlight';
+	width: 92%;
+	text-align: center;
+	display: inline-block;
+	line-height: 1.25em;
+}
+#app_interests .separator{margin: 10px 0 15px 0;}
+
+/*formatação dos icones*/
+#app_interests_options{
+	display: inline-block;
+}
+#app_interests_options li{
+	display: inline-block;
+	width: 90px;
+	height: 115px;
+	vertical-align: top;
+}
+#app_interests_options .margin{margin: 0 15px 25px 15px;}
+
+.back{right: 0;}
+#music_button .back{display: block;}
+
+.circular_buttons_nav{
+	width: 100%;
+}
+#app_interests_options .cicle{
+	width: 90px;
+	height: 90px;
+	border-radius: 10em;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+#app_interests_options .text{
+	font-family: 'quicksandbook';
+	font-size: 0.9em;
+	margin-top: 99px;
+}
+/*definição de cores para os circulos*/
+#music_button .cicle{background-color: #ed1c24;}
+#theater_button .cicle{background-color: #f26522;}
+#dance_button .cicle{background-color: #ffa503;}
+#cine_button .cicle{background-color: #98cf18;}
+#visual_arts_button .cicle{background-color: #437b1d;}
+#literature_button .cicle{background-color: #1c5454;}
+#fashion_button .cicle{background-color: #51a3cb;}
+#kids_button .cicle{background-color: #2953a3;}
+#workshop_button .cicle{background-color: #0f2773;}
+
+
+/*definição dos icones não selecionados*/
+#music_button .ico{
+	width: 50px;
+	margin: 19px 0 0 -4px;
+}
+#theater_button .ico{
+	width: 60px;
+	margin-top: 15px;
+}
+#dance_button .ico{
+	width: 70px;
+	margin-top: 10px;
+}
+#cine_button .ico{
+	width: 45px;
+	margin-top: 20px;
+}
+#visual_arts_button .ico{
+	width: 50px;
+	margin: 19px 0 0 -10px;
+}
+#literature_button .ico{
+	width: 60px;
+	margin-top: 15px;
+}
+#fashion_button .ico{
+	width: 60px;
+	margin-top: 10px;
+}
+#kids_button .ico{
+	width: 60px;
+	margin-top: 24px;
+}
+#workshop_button .ico{
+	width: 60px;
+	margin-top: 13px;
+}
+
+.check_ico{
+	position: absolute;
+	width: 86px;
+	left: 2px;
+	top: 2px;
+}
+
+
+/*definição para botão continuar*/
+.continue_button{
+	width: 80%;
+	height: 40px;
+	color: #2b2e35;
+	background-color: #f2f2f2;
+	display: inline-block;
+	font-size: 1.7em;
+	font-family: 'quicksandlight';
+	text-transform: uppercase;
+	margin: 30px 0;
+	border-radius: 2em;
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.9);
+	padding-top: 10px;
+}
